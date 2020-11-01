@@ -1,0 +1,106 @@
+
+
+h1
+{
+    color:cadetblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 300%;
+}
+
+.background 
+{
+    background-image: url('/IMG/bg.png');
+    background-repeat: repeat;
+    height: 100%;
+}
+
+.main
+{
+    width: 800px;
+    margin:auto;
+}
+
+/*
+.media
+{
+    
+}
+*/
+
+ul
+{
+    list-style-type: none;
+    position: fixed;
+    top: -20px;
+    background-color: black;
+    width: 20em;
+    right: 30%;
+    border-radius: 10px;
+}
+li
+{
+    float: left;
+}
+li a
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 12px;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: bold;
+    
+}
+
+.active
+{
+    color:green;
+}
+
+li a:hover:not(.active)
+{
+    background-color: green;
+}
+
+.icons
+{
+    display: block;
+    top:22em;
+    position: absolute;
+    right: 52em;
+}
+
+.formular
+{
+    padding-top: 70px;
+    color: rgb(92, 91, 91);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: bold;
+}
+
+input[type=text], select, textarea 
+{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    resize: vertical;
+    background-color: rgb(170, 170, 170);
+    color:white;
+  }
+
+  input[type=submit] 
+  {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
