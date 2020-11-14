@@ -1,0 +1,72 @@
+body
+{
+    background-image: url(bg.png);
+    color: white;
+}
+
+
+#karte
+{
+    position: relative;
+}
+.papier
+{
+    
+    padding-top: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.busch 
+{
+    position: absolute;
+    top:120px;
+    left:570px;
+}
+
+.gifts 
+{
+    position: absolute;
+    top:470px;
+    right:650px;
+
+}
+
+.text
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position:absolute;
+    top:220px;
+    left:710px;
+}
+
+h1
+{
+        font-size: 300%;
+}
+
+h2
+{
+        font-size: 150%;
+}
+
+h3
+{
+    font-size: 60%;
+}
+
+.video
+{
+    position: absolute;
+    top:220px;
+    right:700px;
+}
+
+
+.stern
+{
+    position: absolute;
+    top:320px;
+    right:720px;
+}

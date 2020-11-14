@@ -1,0 +1,71 @@
+body
+{
+    background-image: url(bg.png);
+    color: white;
+}
+
+
+.text
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position:absolute;
+    top:220px;
+    left:710px;
+}
+
+h1
+{
+        font-size: 300%;
+}
+
+h2
+{
+        font-size: 150%;
+}
+
+h3
+{
+    font-size: 60%;
+}
+
+
+#karte
+{
+    position: relative;
+}
+.papier
+{
+    
+    padding-top: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stern1 
+{
+    opacity: 1;
+    position: absolute;
+    top:430px;
+    right:770px;
+}
+
+.stern1:hover
+{
+    opacity: 0;
+}
+
+.stern_hover
+{
+    opacity: 0;
+    position: absolute;
+    top:430px;
+    right:770px;
+}
+
+.stern_hover:hover
+{
+    transition: all .2s ease-in-out;
+    opacity: 1;
+}
+

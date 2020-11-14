@@ -104,3 +104,9 @@ input[type=text], select, textarea
     cursor: pointer;
     margin-bottom: 20px;
   }
+
+  a
+  {
+      color:cadetblue;
+      font-size: 200%;
+  }
