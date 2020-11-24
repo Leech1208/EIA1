@@ -2,34 +2,50 @@ body
 {
     background-image: url(bg.png);
     color: white;
+    height: 750px;
+    margin:0px;
 }
 
 
-#karte
+.karte
 {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    top: 175px;
 }
+
 .papier
 {
-    
-    padding-top: 10%;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    margin: 0px;
+}
+
+.deko
+{
+    position: absolute;
+    width: 600px;
+    height: 400px;
 }
 
 .busch 
 {
     position: absolute;
-    top:120px;
-    left:570px;
+    left: -70px;
+    top: -60px;
 }
 
 .pinguin 
 {
     position: absolute;
-    top:420px;
-    right:650px;
+    position: absolute;
+    right: -15px;
+    bottom: -15px;
 
 }
 
@@ -37,8 +53,8 @@ body
 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     position:absolute;
-    top:220px;
-    left:710px;
+    width: 450px;
+    height: 300px;
 }
 
 h1
