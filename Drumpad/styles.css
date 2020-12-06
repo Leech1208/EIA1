@@ -1,0 +1,71 @@
+body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+}
+
+#buttonBox{
+    display:flex;
+    position: absolute;
+    flex-wrap: wrap;
+    height: 600px;
+    width: 600px;
+    justify-content: center;
+    top: 10%;
+}
+
+/*button-Klasse*/
+
+.button{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    margin: 3px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 0px #ffffff60 inset;
+}
+
+/*einzelne Button-IDs*/
+
+#button1{
+    background: linear-gradient(to top, rgb(30,100,210), rgb(60,150,250));
+}
+
+#button2{
+    background: linear-gradient(to top, rgb(30,100,210), rgb(60,150,250));
+}
+
+#button3{
+    background: linear-gradient(to top, rgb(30,100,210), rgb(60,150,250));
+}
+
+#button4{
+    background: linear-gradient(to top, rgb(240,0,125), rgb(255, 90, 175));
+}
+
+#button5{
+    background: linear-gradient(to top, rgb(240,0,125), rgb(255, 90, 175));
+}
+
+#button6{
+    background: linear-gradient(to top, rgb(240,0,125), rgb(255, 90, 175));
+}
+
+#button7{
+    background: linear-gradient(to top, rgb(240,0,125), rgb(255, 90, 175));
+}
+
+#button8{
+    background: linear-gradient(to top, rgb(200, 100, 0), rgb(245, 160, 60));
+}
+
+#button9{
+    background: linear-gradient(to top, rgb(200, 100, 0), rgb(245, 160, 60));
+}
+
+.playButton{
+    opacity: 100%;
+}
+

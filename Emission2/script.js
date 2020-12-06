@@ -35,8 +35,6 @@ function changeV(continent, continent18, continent08) {
     document.querySelector("#percentrelative").innerHTML = (100 / (emissionGesamt18 / continent18)).toFixed(2);
     document.querySelector("#percentgrowth").innerHTML = Math.round(((continent18 / continent08) - 1) * 100).toString();
     document.querySelector("#rategrowth").innerHTML = Math.round(continent18 - continent08) + "t CO2";
-    document.querySelector(".chart").setAttribute('style', 'height:' + (100 / (emissionGesamt18 / continent18)).toFixed(2) + '%');
-    document.querySelector("").setAttribute('style', 'opacity:' + 1);
 }
 ;
 //Europa
