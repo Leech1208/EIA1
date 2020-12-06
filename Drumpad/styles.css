@@ -24,7 +24,13 @@ body{
     width: 150px;
     margin: 3px;
     border-radius: 10px;
-    box-shadow: 10px 10px 10px 0px #ffffff60 inset;
+    box-shadow: 5px 5px 5px 2px #dadada98 inset;
+    
+}
+
+.button:active{
+    background-color: black;
+    opacity: 80%;
 }
 
 /*einzelne Button-IDs*/
@@ -66,6 +72,9 @@ body{
 }
 
 .playButton{
-    opacity: 100%;
+    opacity: 80%;
 }
 
+.playButton:active{
+    opacity: 100%;
+}
