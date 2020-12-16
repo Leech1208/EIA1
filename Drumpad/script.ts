@@ -12,7 +12,7 @@ drumButton[6] = new Audio('./assets/laugh-1.mp3');
 drumButton[7] = new Audio('./assets/laugh-2.mp3');
 drumButton[8] = new Audio('./assets/snare.mp3');
 
-//EventListener zum abspielen der Sounds bei Click
+//EventListener zum Abspielen der Sounds bei Click
 
 document.querySelector("#button1").addEventListener("click", function(){
     playSample(0);
