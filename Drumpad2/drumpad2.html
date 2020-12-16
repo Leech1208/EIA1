@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Drumpad</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
@@ -39,24 +40,21 @@
         <div class="button" id="button9">
         </div>
 
-        <div class="recordButton">
-            <i class="fas fa-microphone"></i>
-            </div>
-            
-            <div class="playButton">
-            <i class="fas fa-play"></i>
-            </div>
-            
-            <div class="stopButton inactive">
-            <i class="fas fa-stop"></i>
-            </div>
-            
-            <div class="deleteButton">
-            <i class="fas fa-trash-alt"></i>
-            </div>
+   
 
+        
+        <div class="bottomBox">
+            <i id="myPlayButton" class="fas fa-play"></i>
+            
+            <i id="myStopButton" class="fas fa-stop is-hidden"></i>
 
-    </div>
+            <i id="myRecButton" class="fas fa-microphone inactive"></i>
+
+            <i id="myDeleteButton" class="fas fa-trash"></i>
+        </div>
+
+    </div>  
+    
 
 
 

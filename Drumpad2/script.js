@@ -60,10 +60,10 @@ var intervall = 0;
 var x;
 var a;
 var i;
-var play = document.querySelector(".playButton");
-var stoppen = document.querySelector(".stopButton");
-var record = document.querySelector(".recordButton");
-var del = document.querySelector(".deleteButton");
+var myPlayButton = document.getElementById("myPlayButton");
+var myStopButton = document.getElementById("myStopButton");
+var myRecButtonn = document.getElementById("myRecButtonn");
+var myDeleteButton = document.getElementById("myDeleteButton");
 //Funktion Playbutton
 function playButton() {
     setInterval(function () {
@@ -102,20 +102,22 @@ function recLoop(x) {
         console.log(sample.length);
     }
 }
-function PlayLoop(a) {
-    if (a == true) {
-        intervall = setInterval(function () {
-            if (i < sample.length) {
-                playSample(sample[i]);
+var myInterval;
+var myArray = [3, 4, 5];
+function playLoop(b) {
+    if (b == true) {
+        myInterval = setInterval(function () {
+            if (i < myArray.length) {
+                playSample(myArray[i]);
                 i++;
             }
             else {
                 i = 0;
             }
-        }, 400);
+        }, 500);
     }
     else {
-        clearInterval(intervall);
+        clearInterval(myInterval);
     }
 }
 function recSample(x) {
@@ -124,5 +126,18 @@ function recSample(x) {
         sample.push(x);
         console.log(sample.length);
     }
+}
+myPlayButton.addEventListener("click", function () {
+    toggleClasses(this, myStopButton);
+    playLoop(true);
+});
+//nochmal dasselbe nur umgekehrt
+myStopButton.addEventListener("click", function () {
+    toggleClasses(this, myPlayButton);
+    playLoop(false);
+});
+function toggleClasses(firstHTMLElement, secondHTMLElement) {
+    firstHTMLElement.classList.add("is-hidden");
+    secondHTMLElement.classList.remove("is-hidden");
 }
 //# sourceMappingURL=script.js.map

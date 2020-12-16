@@ -77,10 +77,10 @@ var x: HTMLAudioElement;
 var a: boolean;
 var i: number;
 
-var play: HTMLElement = document.querySelector(".playButton");
-var stoppen: HTMLElement = document.querySelector(".stopButton");
-var record: HTMLElement = document.querySelector(".recordButton");
-var del: HTMLElement = document.querySelector(".deleteButton");
+const myPlayButton: HTMLElement = document.getElementById("myPlayButton");
+const myStopButton: HTMLElement = document.getElementById("myStopButton");
+const myRecButtonn: HTMLElement = document.getElementById("myRecButtonn");
+const myDeleteButton: HTMLElement = document.getElementById("myDeleteButton");
 
 
 //Funktion Playbutton
@@ -135,22 +135,29 @@ function recLoop (x: HTMLAudioElement): void {
 }
 
 
-function PlayLoop(a: boolean): void {
-    if (a == true) {
-    intervall = setInterval(function (): void {
-    if (i < sample.length) {
-    playSample(sample[i]);
-    i++;
+
+let myInterval: number;
+let myArray: number[] = [3, 4, 5];
+
+function playLoop (b: boolean): void {
+
+    if (b == true) {
+    myInterval = setInterval(function(): void {
+        if (i < myArray.length) {
+            playSample(myArray[i]);
+            i++;
+        }
+        else {
+            i = 0;
+        }
+
+    }, 500);
     }
     else {
-    i = 0;
-    }
-    },                      400);
-    }
-    else {
-        clearInterval(intervall);
+        clearInterval(myInterval);
     }
 }
+
 
 
 
@@ -159,4 +166,21 @@ function recSample (x: HTMLAudioElement): void {
     if (recordactive == true) {
     sample.push(x);
     console.log(sample.length);
+}
+}
+
+myPlayButton.addEventListener("click", function (): void {
+    toggleClasses(this, myStopButton); 
+    playLoop(true);
+});
+//nochmal dasselbe nur umgekehrt
+myStopButton.addEventListener("click", function (): void {
+    toggleClasses(this, myPlayButton); 
+    playLoop(false);
+});
+
+
+function toggleClasses( firstHTMLElement: HTMLElement, secondHTMLElement: HTMLElement): void {
+    firstHTMLElement.classList.add("is-hidden");
+    secondHTMLElement.classList.remove("is-hidden");
 }
