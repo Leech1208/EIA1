@@ -1,0 +1,70 @@
+﻿body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0%;
+  margin-top: 100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgba(0, 0, 0, 0.459);
+}
+h1{
+  margin: 0%;
+  margin-bottom: 10px;
+  font-size: 60px;
+  position: relative;
+  right: 45px;
+  color: rgb(25, 47, 143);
+  text-shadow: 3px 3px #0ece37;
+}
+h2{
+  margin: 0%;
+  margin-bottom: 10px;
+  position: relative;
+  font-size: 30px;
+  left:50px;
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px #000000;
+}
+.taskBox {
+  position: relative;
+}
+.myDiv {
+  position: relative;
+  right: 20px;
+  padding:20px;
+  background: rgb(18, 67, 151);
+  width: 300px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow:#0ece37 3px 3px;
+}
+.myDiv:hover {
+  background:#0ece37;
+}
+
+.myClass{
+  position: absolute;
+  color: rgb(255, 255, 255);
+  left: 50px;
+}
+.fas{
+  position: relative;
+  left: 270px;
+  color:white;
+}
+
+.fas:hover{
+  color:rgb(18, 67, 151);
+}
+
+#inputField{
+  position: relative;
+  right: 13px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow:#0ece37 3px 3px;
+  width: 320px;
+  height: 35px;
+}
